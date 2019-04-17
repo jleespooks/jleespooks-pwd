@@ -1,2 +1,1 @@
-# jleespooks-pwp
-pwp
+Personal website for Jamie Amparan
