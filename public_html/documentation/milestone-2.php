@@ -16,7 +16,7 @@
 		<p> This section will show projects that I have finished and have been involved in. I would like to have this section animated in some way whether it be an ipod style flip book or on a timer.</p>
 		<b>Contact:</b>
 		<p>This section will have the email form, as well as, links to my github, linkedin, workphone, and maybe a business instagram </p>
-		<img src="webWireframe.png" width="600" alt="webview">
-		<img src="mobileWireframe.png" width="550" alt="phoneview">
+		<img src="nWebWireframe.png" width="600" alt="webview">
+		<img src="nPhoneWireframe.png" width="550" alt="phoneview">
 	</body>
 </html>
