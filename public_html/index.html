@@ -19,10 +19,21 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
+		<!-- jQuery Form, Additional Methods, Validate -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+		<!-- Your JavaScript Form Validator -->
+		<script src="js/form-validate.js"></script>
+
+		<!-- Google reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
 
 	</head>
+	<!--Navbar -->
 	<header>
-		<!--Navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 				<a class="navbar-brand" href="#">About</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,22 +55,20 @@
 		</nav>
 	</header>
 	<body>
-		<!--Beginning of About me section -->
+		<!--text inside the welcome picture-->
 	<section>
-		<div class="card bg-dark text-white">
 		<div class="container-fluid backgroundimg">
 			<div class="row-fluid">
 				<div class="column">
 					<div class="container pt-5">
 						<h1 class="display-3 text-center font-weight-bold">Jamie Amparan</h1>
 						<p class="lead text-center">Web Developer</p>
-					</div>
 				</div>
 			</div>
 		</div>
 		</div>
 	</section>
-		<!--Profile Pic -->
+		<!--starting about me and profile pic -->
 		<section class="py-5">
 			<div class="container" id="about">
 				<div class="row">
@@ -67,14 +76,82 @@
 						<h2>About Jamie</h2>
 						<img class="img-fluid" src="img/aboutMePic.jpg" alt="aboutPic" width="200"; height="200";>
 						</div>
-					<!--About me -->
+							<!--About me -->
 						<div class="column-fluid mt-5 col 2">
 							<p class="lead">
-								"Freak human out make funny noise mow mow mow mow mow mow success now attack human be superior it's 3am, time to create some chaos curl up and sleep on the freshly laundered towels but jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water, or get my claw stuck in the dog's ear. Meow in empty rooms destroy couch, so tuxedo cats always looking dapper."
+								"Freak human out make funny noise mow mow mow mow mow mow success now attack human be superior it's 3am, time to create some chaos curl up and sleep on the freshly laundered towels but jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water, or get my claw stuck in the dog's ear. Meow in empty rooms destroy couch, so tuxedo cats always looking dapper. Find me on
+								<a href="https://www.linkedin.com/in/jamie-amparan/" target="_blank">LinkeIn</a>
+								or
+								<a href="https://github.com/jleespooks/" target="_blank">Github</a>"
+							</p>
 							</p>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!--need to figure this part out tomorrow. Need a carousel of some kind.. maybe-->
+		<section>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+		<!--Contact form area -->
+		<section>
+		<div class="container-fluid" id="contact-section">
+			<div class="container">
+				<div class="row ml-1">
+					<div class="column pt-5 mb-5 pb-5 col-12">
+						<h2>Contact</h2>
+						<form id="contact-form" action="php/mailer.php" method="post" class="form-horizontal well" novalidate="novalidate">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<div class="input-group-addon">
+
+								</div>
+								<input type="text class=form-control" id="contactFormName" name="contact"
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</section>
+		<footer>
+			<div class="container-fluid">
+				<div class="sticky-footer text-center text-white bg-dark pt-2 pb-0 m-o fixed-bottom">
+					<p>
+						<a href="https://github.com/jleespooks/" target="_blank">
+
+						</a>
+					</p>
+
+				</div>
+
+			</div>
+		</footer>
 	</body>
 </html>
