@@ -4,15 +4,27 @@ body, html {
 }
 
 .backgroundimg {
-	background-image:url("./img/mymodernmetpic.jpg");
+	background-image:url("./img/whiteSands.jpg");
 	background-size: cover;
 	background-position: top right;
 	background-repeat: no-repeat;
 	height: 100vh;
 }
 
+.backgroundimg2 {
+	background-image: url("./img/chiliSantaFe.jpg");
+	background-size: cover;
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 100vh;
+	opacity: .8;
+}
+
 @media only screen and (min-width: 768px) {
 	.backgroundimg {
 		background-position: bottom center;
 	}
+}
+
+.py-5 {
 }
