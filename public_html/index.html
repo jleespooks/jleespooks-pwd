@@ -5,7 +5,10 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
-		<title>Hello World</title>
+		<title>My Name is Jamie</title>
+		<!-- Parallax -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="/path/to/parallax.js"></script>
 		<!--Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 				integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -35,10 +38,6 @@
 		<!-- Your JavaScript Form Validator -->
 		<script src="js/form-validate.js"></script>
 
-		<!-- Parallax -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="/path/to/parallax.js"></script>
-
 		<!-- Google reCAPTCHA -->
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 
@@ -46,7 +45,7 @@
 	</head>
 	<!--Navbar -->
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-light ">
 			<a class="navbar-brand" href="#">About</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 					  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +69,6 @@
 	<body>
 		<!--text inside the welcome picture-->
 		<section>
-			<div class="parallax-window" data-parallax="scroll" data-image-src="whiteSands.jpg"></div>
 			<div class="container-fluid backgroundimg">
 				<div class="row-fluid">
 					<div class="column">
@@ -83,7 +81,7 @@
 			</div>
 		</section>
 		<!--starting about me and profile pic -->
-		<section class="py-5 bg-color-black">
+		<section class="py-5">
 			<div class="container" id="about">
 				<div class="row">
 					<div class="column-fluid col-md-4">
@@ -100,7 +98,7 @@
 							bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the
 							water slide and into pool and swims even though it does not like water, or get my claw stuck in the
 							dog's ear. Meow in empty rooms destroy couch, so tuxedo cats always looking dapper. Find me on
-							<a href="https://www.linkedin.com/in/jamie-amparan/" target="_blank">LinkeIn</a>
+							<a href="https://www.linkedin.com/in/jamie-amparan/" target="_blank">LinkedIn</a>
 							or
 							<a href="https://github.com/jleespooks/" target="_blank">Github</a>"
 						</p>
@@ -129,7 +127,7 @@
 					<div class="row m1-1">
 						<div class="column pt-5 mb-5 pb-5 col-12">
 							<h2>Contact</h2>
-							<form id="contact-form" method="post" action="../php/mailer.php">
+							<form id="contact-form" method="post" action="../php/">
 								<div class="form-group">
 									<label for="name">Name <span class="text-danger">*</span></label>
 									<div class="input-group">
@@ -171,22 +169,20 @@
 													 placeholder="I look forward to hearing from you (2000 characters max)"></textarea>
 									</div>
 								</div>
+								<!-- reCAPTCHA -->
+								<div class="g-recaptcha" data-sitekey="6Ld18qMUAAAAAFFbLk7TBzGFoMn-vyt66nZFZJA5"></div>
+
+								<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+								<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
 							</form>
+							<!--empty area for form error/success output-->
+							<div class="row">
+								<div class="col-xs-12">
+									<div id="output-area">
+									</div>
+								</div>
+							</div>
+						</div>
 		</section>
-
-
-		<!-- reCAPTCHA -->
-		<div class="g-recaptcha" data-sitekey="6Ld18qMUAAAAAFFbLk7TBzGFoMn-vyt66nZFZJA5"></div>
-
-		<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-		<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
-
-		<!--empty area for form error/success output-->
-		<div class="row">
-			<div class="col-xs-12">
-				<div id="output-area">
-				</div>
-			</div>
-		</div>
 	</body>
 </html>
