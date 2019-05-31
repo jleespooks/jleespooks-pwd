@@ -3,6 +3,7 @@ body, html {
 	padding: 0;
 }
 
+
 .backgroundimg {
 	background-image:url("./img/whiteSands.jpg");
 	background-size: cover;
@@ -10,6 +11,7 @@ body, html {
 	background-repeat: no-repeat;
 	height: 100vh;
 }
+
 
 .backgroundimg2 {
 	background-image: url("./img/chiliSantaFe.jpg");
